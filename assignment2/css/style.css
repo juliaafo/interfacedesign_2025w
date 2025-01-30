@@ -1,0 +1,45 @@
+/* custom fonts */
+@font-face {
+}
+
+/* video set at background using z-index*/
+.video-background {
+}
+
+/* video adjustments */
+.video-background video {
+}
+
+/* setting an overlay so the video is not too bright*/
+.video-overlay {
+}
+
+/* headers, h1, h2 */
+header {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+/* body */
+body {
+}
+
+/* lyrics styling */
+
+/* album cover */
+
+
+/* lyrics itself */
+.lyrics {
+}
+
+/* footer */
+footer {
+}
+
+footer .quote {
+}
