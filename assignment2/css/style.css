@@ -1,45 +1,280 @@
 /* custom fonts */
 @font-face {
+    font-family: "ghostbrush";
+    src: url("../fonts/GhostBrush-AL14L.otf");
+    font-weight: auto;
 }
+
+@font-face {
+    font-family: "insideout";
+    src: url("../fonts/InsideOut-DAp0.ttf");
+    font-weight: auto;
+}
+
+@font-face {
+    font-family: "sicklemoon";
+    src: url("../fonts/Sicklemoon-rgEaO.otf");
+    font-weight: auto;
+}
+
+@font-face {
+    font-family: "strangeworld";
+    src: url("../fonts/StrangeWorld-PZ72.ttf");
+    font-weight: auto;
+}
+
+@font-face {
+    font-family: "draftfree";
+    src: url("../fonts/HandwritingDraftFreeVersion-9zlL.ttf");
+    font-weight: auto;
+}
+
+@font-face {
+    font-family: "signature";
+    src: url("../fonts/HandwritingSignature-e9VoB.otf");
+    font-weight: auto;
+}
+
+@font-face {
+    font-family: "bloodyscary";
+    src: url("../fonts/BloodyScaryRegular-K7q8y.ttf");
+    font-weight: auto;
+}
+
+@font-face {
+    font-family: "fear";
+    src: url("../fonts/Fear-j95v.ttf");
+    font-weight: auto;
+}
+
+@font-face {
+    font-family: "tribal";
+    src: url("../fonts/TribalSchoolhouse-v2XM.ttf");
+    font-weight: auto;
+}
+
 
 /* video set at background using z-index*/
 .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
 }
 
 /* video adjustments */
+
 .video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* using this to perfectly center the video due to being off*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* setting an overlay so the video is not too bright*/
 .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
 }
 
-/* headers, h1, h2 */
-header {
-}
-
-h1 {
-}
-
-h2 {
+/* album cover */
+.album-art img {
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* body */
 body {
+    background-color: #121212;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* lyrics styling */
-
-/* album cover */
-
-
-/* lyrics itself */
-.lyrics {
+.lyrics-glass {
+    font-family: "insideout";
+    color: #eeecdc;
+    font-size: 1.5rem;
+    background: rgba(68, 68, 68, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 500px;
+    margin: 30px auto;
 }
+
+/* headers, h1, h2, h3*/
+header {
+    padding: 30px 0;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: "strangeworld", sans-serif;
+    font-weight: bold;
+    color: #E31C25;
+    margin: 0;
+}
+
+h2 {
+    font-family: "insideout", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+h3 {
+    font-family: "strangeworld", sans-serif;
+    font-size: 3.5rem;
+    color:#E31C25;
+    line-height: 0;
+}
+
+/* lyrics itself and text styles & fonts*/
+
+.homicide {
+    font-family: "ghostbrush", sans-serif;
+    font-size: 3.5rem;
+}
+
+.numb {
+    font-family: "draftfree", sans-serif;
+    font-size: 2.1rem;
+    color: #7e807e;
+}
+
+.scared {
+    font-family: "fear", sans-serif;
+    font-size: 2rem;
+    color:#E31C25;
+    line-height: 0;
+}
+
+.dont-care {
+    font-family: "tribal", sans-serif;
+    color:#7e807e;
+}
+
+.verse {
+    font-family: "signature", sans-serif;
+    font-size: 2.6rem;
+    color:#7e807e;
+    line-height: 0;
+}
+
+.still {
+    font-family: "draftfree", sans-serif;
+    color:#E31C25;
+    font-size: 2.5rem;
+    line-height: 0;
+}
+
+.mean{
+    font-family: "tribal", sans-serif;
+    color: #7e807e;
+}
+
+.you{
+    font-family: "signature", sans-serif;
+    color: #E31C25;
+    font-size: 3rem;
+    line-height: 0;
+}
+
+.chorus2 {
+    font-family: "sicklemoon", sans-serif;
+    font-size: 3rem;
+    color: #7e807e;
+}
+
+.mind{
+    font-family: "draftfree", sans-serif;
+    font-size: 2.3rem;
+    line-height: 0;
+}
+
+
+.hook {
+    font-family: "bloodyscary", sans-serif;
+    font-size: 3rem;
+    color: #E31C25;
+}
+
+
+.cry {
+    font-family: "tribal", sans-serif;
+    color: #7e807e;
+    line-height: 0;
+}
+
+.bridge {
+    font-family: "signature", sans-serif;
+    font-size: 2.6rem;
+    color:#7e807e;
+    line-height: 0;
+
+}
+
+.waiting{
+    font-family: "strangeworld", sans-serif;
+    font-size: 3rem;
+    color: #E31C25;
+    line-height: 0;
+}
+
+.someone {
+    font-family: "tribal", sans-serif;
+    color: #7e807e;
+    line-height: 0;
+}
+
+.ghost {
+    font-family: "signature", sans-serif;
+    font-size: 2.6rem;
+    color:#7e807e;
+    line-height: 0;
+}
+
 
 /* footer */
 footer {
+    background: rgba(68, 68, 68, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    margin-top: 50px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
 }
 
 footer .quote {
+    font-family: "draftfree", sans-serif;
+    font-style: italic;
+    font-size: 1.4em;
+    color:#7e807e;
+    opacity: 0.9;
+}
+
+footer p small {
+    font-family: "insideout", sans-serif;
+    color: #eeecdc;
 }
